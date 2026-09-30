@@ -1,3 +1,9 @@
+/* ============================================
+   Orquestrador da SPA - ONG Pepe Legal
+   Contém: objeto de rotas, função navegar(),
+   listeners de load, hashchange, input e submit,
+   além da função criarGrafico().
+   ============================================ */
 import { renderHome, renderProjetos, renderCadastro } from './render.js';
 import { salvarCadastro, obterCadastros } from './storage.js';
 import { validarCPF, validarTelefone, validarCEP } from './validation.js';
