@@ -1,4 +1,12 @@
-﻿:root {
+﻿/* ============================================
+   Design System - ONG Pepe Legal
+   Folha de estilos principal
+   Contém: variáveis (cores, tipografia, espaçamentos),
+   grid de 12 colunas, Flexbox, breakpoints responsivos,
+   estados interativos e componentes de feedback.
+   ============================================ */
+
+:root {
     --cor-primaria: #6A0DAD;
     --cor-primaria-escura: #4A0880;
     --cor-secundaria: #5DADE2;

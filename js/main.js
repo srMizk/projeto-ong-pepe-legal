@@ -1,3 +1,9 @@
+/* ============================================
+   Orquestrador da SPA - ONG Pepe Legal
+   Contém: objeto de rotas, função navegar(),
+   listeners de load, hashchange, input e submit,
+   além da função criarGrafico().
+   ============================================ */
 import { renderHome, renderProjetos, renderCadastro } from './render.js';
 import { salvarCadastro, obterCadastros } from './storage.js';
 import { validarCPF, validarTelefone, validarCEP } from './validation.js';
@@ -17,6 +23,12 @@ function navegar() {
     if (hash ==='/' || hash === '') criarGrafico();
 }
 
+/* ============================================
+   Grafico com Chart.js - ONG Pepe Legal
+   Usa a biblioteca Chart.js (via CDN) para
+   visualizar a contagem de interesses dos
+   colaboradores cadastrados no localStorage.
+   ============================================ */
 function criarGrafico() {
     const canvas = document.getElementById('grafico-interesses');
     if (!canvas) return;
