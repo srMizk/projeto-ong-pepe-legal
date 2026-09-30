@@ -1,3 +1,9 @@
+/* ============================================
+   Validacao de campos - ONG Pepe Legal
+   Contém: validarCPF(), validarTelefone() e validarCEP(),
+   cada uma com RegEx ancorada (^...$).
+   Aplica as classes .valido e .invalido nos campos.
+   ============================================ */
 export function validarCPF(campo) {
     
     const regex = /^[0-9]{11}$/;
