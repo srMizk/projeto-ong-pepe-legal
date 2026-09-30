@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Seja um apoiador</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <h1 class="Marca">ONG Pepe Legal</h1>
+        <p>Cuidando de animais com déficits cognitivos</p>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <nav>
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="projetos.html">Projetos</a>
+                <div class="submenu">
+                    <a href="projetos.html#saude">Saúde PET</a>
+                    <a href="projetos.html#alimentacao">Alimentação</a>
+                    <a href="projetos.html#vacinacao">Vacinação</a>
+                    <a href="projetos.html#oficina">Oficina Sensorial</a>
+                </div>
+            </div>
+            <a href="cadastro.html">Como ajudar</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="cadastro">
+            <h2>Seja um herói na vida de um cão especial</h2>
+            <p>Preencha o formulário abaixo e faça parte da nossa equipe de colaboradores. Seja com doações, voluntariado ou parcerias, sua contribuição é essencial para continuarmos transformando vidas.</p>
+            <p><strong>"Juntos, podemos fazer a diferença na vida de centenas de animais!"</strong></p>
+            <form>
+                <p>
+                    <a href="#alerta-sucesso" class="link-oculto">Mostrar sucesso</a> |
+                    <a href="#alerta-erro" class="link-oculto">Mostrar erro</a>
+                </p>
+                <div class="alerta alerta-sucesso" id="alerta-sucesso">
+                    ✅ Cadastro realizado com sucesso!
+                </div>
+                <div class="alerta alerta-erro" id="alerta-erro">
+                    ❌ Preencha todos os campos obrigatórios.
+                </div>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" required minlength="5" maxlength="20" placeholder="Digite seu nome completo" name="nome" id="nome" />
+                    <label for="data-nascimento">Data de nascimento:</label>
+                    <input type="date" required name="data-nascimento" id="data-nascimento" />
+                    <label for="cpf">CPF:</label>
+                    <input type="text" required pattern="[0-9]{11}" placeholder="Digite apenas números" maxlength="11" minlength="11" name="cpf" id="cpf" />
+                </fieldset>
+                <fieldset>
+                    <legend>Contato e Endereço</legend>
+                    <label for="email">E-mail:</label>
+                    <input type="email" required placeholder="usuário@dominio.com" name="email" id="email" />
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" required pattern="[0-9]{10,11}" placeholder="Digite apenas números" maxlength="11" minlength="10" name="telefone" id="telefone" />
+                    <label for="cep">CEP:</label>
+                    <input type="text" required pattern="[0-9]{8}" placeholder="Digite apenas números" maxlength="8" minlength="8" name="cep" id="cep" />
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" required minlength="5" maxlength="30" placeholder="Rua, número, bairro" name="endereco" id="endereco" />
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" required placeholder="Sua cidade" name="cidade" id="cidade" />
+                    <label for="estado">Estado:</label>
+                    <select name="estado" id="estado" required>
+                        <option value="">Selecione seu estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Como você quer ajudar?</legend>
+                    <label><input type="checkbox" name="interesse[]" value="presencial" />Voluntariado presencial</label>
+                    <label><input type="checkbox" name="interesse[]" value="remoto" />Voluntariado remoto</label>
+                    <label><input type="checkbox" name="interesse[]" value="dinheiro" />Doações em dinheiro</label>
+                    <label><input type="checkbox" name="interesse[]" value="mantimento" />Doação de ração/medicamentos</label>
+                    <label><input type="checkbox" name="interesse[]" value="parceria" />Parcerias empresariais</label>
+                    <label><input type="checkbox" name="interesse[]" value="Divulgacao" />Divulgação da causa</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Disponibilidade</legend>
+                    <label><input type="checkbox" name="disponibilidade[]" value="dia-util" />Segunda a Sexta</label>
+                    <label><input type="checkbox" name="disponibilidade[]" value="sabado" />Sábado</label>
+                    <label><input type="checkbox" name="disponibilidade[]" value="domingo" />Domingo</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <label><textarea maxlength="500" name="sobre-voce" id="sobre-voce" placeholder="Quero ajudar a cuidar dos animais pois..."></textarea></label>
+                </fieldset>
+                <input type="submit" value="Enviar formulário" />
+            </form>
+        </section>
+        <a href="#modal-confirmacao" class="btn-abrir-modal">Abrir modal de confirmação</a>
+        <div class="modal-overlay" id="modal-confirmacao">
+            <div class="modal">
+                <h3>Confirmar envio</h3>
+                <p>Deseja realmente enviar seu cadastro?</p>
+                <div class="modal-botoes">
+                    <button class="btn-confirmar">Sim, enviar</button>
+                    <button class="btn-cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+        <a href="#toast-sucesso" class="btn-toast">Mostrar notificação</a>
+        <div class="toast" id="toast-sucesso">
+            ✅ Cadastro enviado com sucesso!
+        </div>
+    </main>
+    <footer>
+        <section id="contato">
+            <h3>Contatos</h3>
+            <a href="#instagram" target="_blank">Instagram</a>
+            <a href="#youtube" target="_blank">Youtube</a>
+            <a href="#e-mail" target="_blank">E-mail</a>
+        </section>
+    </footer>
+</body>
+</html>
