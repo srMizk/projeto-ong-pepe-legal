@@ -1,3 +1,10 @@
+/* ============================================
+   Renderizacao de views - ONG Pepe Legal
+   Contém: renderHome(), renderProjetos() e renderCadastro().
+   Cada funcao retorna uma string HTML (Template Literals)
+   que e injetada no #app pelo main.js via innerHTML.
+   Este modulo faz parte da arquitetura ES6 Modules.
+   ============================================ */
 export function renderHome() {
     
     return `
