@@ -16,6 +16,15 @@ Projeto de Single Page Application (SPA) desenvolvido para a ONG Pepe Legal, org
 - `js/` — módulos ES6 (render, storage, validation, main)
 - `img/` — imagens otimizadas em múltiplos formatos
 
+
+## Testes
+
+O projeto foi validado com os seguintes testes:
+- Validação de formulário em tempo real
+- Persistência de dados entre sessões
+- Navegação SPA sem recarregamento
+- Renderização do gráfico de interesses
+
 ## Versão
 
 v1.0.0 — Entrega final
