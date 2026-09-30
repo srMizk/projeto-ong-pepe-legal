@@ -23,6 +23,12 @@ function navegar() {
     if (hash ==='/' || hash === '') criarGrafico();
 }
 
+/* ============================================
+   Grafico com Chart.js - ONG Pepe Legal
+   Usa a biblioteca Chart.js (via CDN) para
+   visualizar a contagem de interesses dos
+   colaboradores cadastrados no localStorage.
+   ============================================ */
 function criarGrafico() {
     const canvas = document.getElementById('grafico-interesses');
     if (!canvas) return;
