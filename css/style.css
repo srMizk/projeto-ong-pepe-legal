@@ -556,7 +556,7 @@ main > form {
     }
 }
 
-@media (prefers-color-scheme: dark) {
+//*@media (prefers-color-scheme: dark) {
     :root {
         --cor-branca: #121212;
         --cor-neutra-escura: #E0E0E0;
@@ -569,4 +569,4 @@ main > form {
         --cor-sucesso: #4CAF50;
         --cor-erro: #CF6679;
     }
-}
+}*//
