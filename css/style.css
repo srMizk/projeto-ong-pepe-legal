@@ -131,7 +131,7 @@ a:hover {
 }
 
 footer {
-    background-color: var(--cor-primaria-escura);
+    background-color: var(--cor-primaria);
     color: var(--cor-branca);
     padding: var(--espaco-xl);
     text-align: center;
@@ -553,5 +553,20 @@ main > form {
     main {
         grid-template-columns: repeat(12, 1fr);
         max-width: 1400px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --cor-branca: #121212;
+        --cor-neutra-escura: #E0E0E0;
+        --cor-neutra-media: #9E9E9E;
+        --cor-neutra-clara: #1E1E1E;
+        --cor-primaria: #BB86FC;
+        --cor-primaria-escura: #3700B3;
+        --cor-secundaria: #03DAC6;
+        --cor-secundaria-clara: #1F3B4D;
+        --cor-sucesso: #4CAF50;
+        --cor-erro: #CF6679;
     }
 }
